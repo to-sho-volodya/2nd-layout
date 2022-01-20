@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/*reset default settings*/
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:14px;line-height:22px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%; font-family: "PT Sans"}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none; color: white}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+/*img{vertical-align: top;}*/
+/*--------------------*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+}
+
+.header_content {
+    /*position: relative;*/
+    width: 980px;
+    margin: 0px auto;
+    display: flex;
+    height: 100%;
+}
+
+.header_1st_block {
+    /*position: absolute;*/
+    margin: auto auto auto 0;
+}
+
+.header_2nd_block {
+    /*position: absolute ;
+    right: 0px;*/
+    /*float: right;
+    margin-left: auto;*/
+    margin: auto 0 auto auto;
+}
+
+.head_inform {
+    /*display: flex;
+    justify-content: space-between;
+    width: 980px;
+    padding: 65px 10px;
+    margin: 0px auto;*/
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+.contacts a {
+    color: #767676;
+}
+
+.menu_content a {
+    text-decoration:none;
+    display: inline-block;
+    line-height: 1;
+}
+
+.menu_content a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: width 0s ease-in-out;
+}
+
+.menu_content a:hover:after,
+.menu_content a:focus:after {
+    width: 100%;
+}
+
+menu {
+    background-color: #777777;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_content {
+    font-size: 22px;
+    max-width: 980px;
+}
+
+.menu_content ul {
+
+}
+
+.menu_content ul li{
+    display: inline-block;
+    border-left: 2px solid #fff;
+    border-left-height: 1px ;
+    padding: 0 15px 0px 15px;
+}
+
+.menu_content ul li:first-child {
+    border: none;
+}
+
+
+.slider {
+    display: inline-block;
+    width: 1248px;
+    height: 462px;
+    position: relative;
+    z-index: -1;
+    margin: -53px auto 0px;
+}
+.slider img {
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 50px auto 0px;
+}
+
+.news p {
+    max-width: 150px;
+    /*margin: 0px auto;*/
+}
+
+
+.news_block {
+    background-color: #777777;
+    color: white;
+}
+.news {
+    margin: 22px 52px 100px 33px;
+}
+
+.news h2 {
+    padding-bottom: 38px;
+    font-size: 28px;
+}
+
+.news p {
+    font-family: 'PTSans-Italic';
+    font-style: italic;
+}
+
+.news_list {
+    width: 265px;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news_list a:last-child{
+    text-align: right;
+    text-decoration: underline;
+}
+
+.main_content_block {
+    margin: 20px 0px 47px 59px;
+}
+
+.main_content {
+    width: 569px;
+    height: 493px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #767676;
+}
+
+.main_content h2 {
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: #777777;
+    color: white;
+    width: 100%;
+    height: 220px;
+    margin: 195px auto 0px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    width: 980px;
+    margin: 0px auto;
+}
+
+.copyright {
+    margin-top: 50px;
+}
+
+.footer_content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer_menu {
+    text-decoration: underline;
+    padding-top: 50px;
+    margin-bottom: 53px;
+}
+
+.company_link {
+    font-size: 14px;
+    margin: 17px 0px 69px 0px;
+    background: url(img/footer_logo.png) left no-repeat;
+    padding:  33px 0px 0px 42px;
+    width: 208px;
+
+}
