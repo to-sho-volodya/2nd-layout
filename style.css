@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('fonts/OpenSansCondensed-Light.eot');
+    src: url('fonts/OpenSansCondensed-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSansCondensed-Light.woff2') format('woff2'),
+    url('fonts/OpenSansCondensed-Light.woff') format('woff'),
+    url('fonts/OpenSansCondensed-Light.ttf') format('truetype'),
+    url('fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*reset default settings*/
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
@@ -62,12 +76,14 @@ header {
 }
 
 .contacts {
+    font-family: 'Open Sans Condensed';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 46px;
     letter-spacing: 0.025em;
+    /* font-weight: 300; */
     color: #767676;
 }
 .contacts a {
@@ -169,7 +185,7 @@ menu {
 
 .news_list {
     width: 265px;
-    height: 372px;
+    min-height: 372px;
     display: flex;
     flex-direction: column;
 }
